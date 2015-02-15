@@ -1,0 +1,503 @@
+@import url(reset.css);
+
+@font-face{
+	font-family: Candara;
+	src:url(../fonts/Candara.ttf);
+}
+
+@font-face{
+	font-family: Cambria;
+	src:url(../fonts/cambria.ttf);
+}
+
+body {
+   font-family: Candara;
+   background-color: #fff;
+}
+
+/*Begin Header*/
+
+header {
+   height: 370px;
+   background-color:#f8f7f7; 
+}
+
+#header {
+   width: 960px;
+   height: 370px;
+   margin:0 auto;
+   background: url(../images/header_bg.png);
+   position:relative;
+}
+
+#logo {
+   position: absolute;
+   top:65px;
+   left:0px;
+}
+
+#logo a {
+	display: block;
+	height: 45px;
+	cursor:pointer;
+}
+
+nav {
+	height: 15px;
+	width: 332px;
+	position: absolute;
+	top:60px;
+	right:0px;
+}
+
+nav li {
+   float:left;
+   margin-right: 8px;
+   text-transform: uppercase;
+   font:14px Candara;
+   -webkit-text-shadow:1px 1px 2px red;
+   -moz-text-shadow:1px 1px 2px white;
+   -o-text-shadow:1px 1px 2px white;
+   -ms-text-shadow:1px 1px 2px white;
+   text-shadow:1px 1px 2px white;
+}
+
+nav li a {
+	text-decoration: none;
+	cursor: pointer;
+	color:#717171;
+}
+
+#menu ul {
+	width:168px;
+	height: 174px;
+	display:none;
+	position: absolute;
+	top:23px;
+	left:100px;
+	z-index:100;
+	background: url(../images/nav_bg.png) repeat-x;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 1px 1px 5px rgba(0,0,0,.2);
+	-moz-box-shadow: 1px 1px 5px rgba(0,0,0,.2);
+	-o-box-shadow: 1px 1px 5px rgba(0,0,0,.2);
+	-ms-box-shadow: 1px 1px 5px rgba(0,0,0,.2);
+	box-shadow: 1px 1px 5px rgba(0,0,0,.2);
+}
+
+#menu ul::before {
+	content:'';
+	display: block;
+	width: 10px;
+	height: 10px;
+	background: url(../images/triangle.png);
+	position: absolute;
+	left:20px;
+	top:-6px;
+	z-index: 10;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+#menu ul li a{
+	height: 23px;
+	width: 128px;
+	display: block;
+	margin: 15px 0 0 20px;
+}
+
+#menu ul li a::after {
+	content:'';
+	display: block;
+	width:50px;
+	margin-top: 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+#menu li:hover > ul {
+	display: block;
+}
+
+
+/*End Header*/
+
+/*Begin Content*/
+
+#contentTop {
+	border-bottom:2px solid #d4d4d4;
+	background: url(../images/contentTop.png) repeat-x;
+	padding-bottom: 25px;
+}
+
+#contentTop section {
+     width:960px;
+     margin:0 auto;
+}
+
+#contentLeft {
+	width:400px;
+	float:left;
+}
+
+#form {
+	margin-top:50px; 
+	width: 400px;
+	height: 70px;
+	border:1px solid #fff;
+	position: relative;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #ededed;
+	-webkit-box-shadow: 2px 5px 10px rgba(0,0,0,.2);
+	-moz-box-shadow: 2px 5px 10px rgba(0,0,0,.2);
+	-o-box-shadow: 2px 5px 10px rgba(0,0,0,.2);
+	-ms-box-shadow: 2px 5px 10px rgba(0,0,0,.2);
+	box-shadow: 2px 5px 10px rgba(0,0,0,.2);
+}
+
+#form::after {
+	content: '';
+	width: 13px;
+	height: 13px;
+	display: block;
+	background-color: #ececec;
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	position: absolute;
+	top:64px;
+	left:195px;
+}
+
+#form input.email {
+	height: 28px;
+	width: 230px;
+	margin: 15px 8px 0 15px;
+	border:1px solid #cfcfcf;
+	font:16px Candara;
+	color:#767676;
+	background:#dddddd url(../images/email_bg.png) no-repeat 10px 9px;
+	padding-left: 35px;
+	-webkit-box-shadow: 0px 2px 5px rgba(255,255,255,1);
+	-moz-box-shadow: 0px 2px 5px rgba(255,255,255,1);
+	-o-box-shadow: 0px 2px 5px rgba(255,255,255,1);
+	-ms-box-shadow: 0px 2px 5px rgba(255,255,255,1);
+	box-shadow: 0px 2px 5px rgba(255,255,255,1);
+}
+
+#form input.email:active {
+
+}
+
+#form input.button {
+	width:90px;
+	height: 30px;
+	border:1px solid #f09728;
+	background-color:#fb8e06;
+	background: linear-gradient(to bottom,#fece61,#fb8e06);
+	font: 15px Candara;
+	color:#fff;
+	cursor: pointer;
+	-webkit-box-shadow: 2px 2px 5px rgba(255,255,255,1);
+	-moz-box-shadow: 2px 2px 5px rgba(255,255,255,1);
+	-o-box-shadow: 2px 2px 5px rgba(255,255,255,1);
+	-ms-box-shadow: 2px 2px 5px rgba(255,255,255,1);
+	box-shadow: 2px 2px 5px rgba(255,255,255,1);
+	
+}
+
+#contentLeft p {
+	font: italic 12px Candara;
+	color:#615d61;
+	margin:15px 0 0 105px;
+}
+
+article {
+	width: 250px;
+	float:left;
+	margin: 50px 0 0 30px;
+}
+
+article h3 {
+    font:bold 13px Candara;
+    color: #141313;
+    margin-bottom: 10px;
+}
+
+article p {
+	font:13px Candara;
+	color:#232323;
+	line-height: 30px;
+	margin-bottom: 30px;
+}
+
+article a {
+	text-decoration: none;
+	font:13px Candara;
+	color: #595858;
+	margin-left:160px;
+}
+
+#contentTop::after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+#contentBottom {
+	background-color: #f8f7f7;
+	padding-top: 45px;
+}
+
+#sectionWrapper {
+	width:960px;
+	height: 425px;
+	margin:0 auto;
+}
+
+#sectionTop {
+	height: 235px;
+}
+
+#sectionLeft {
+	width:670px;
+	margin-right: 40px;
+	float:left;
+}
+
+#sectionLeft p {
+	font:13px Candara;
+}
+
+#sectionLeft p:first-child {
+	color:#323231;
+	line-height: 25px;
+	margin-bottom: 35px;
+}
+
+#sectionLeft p:last-child {
+	color: #6f6f6f;
+	line-height: 20px;
+}
+
+#sectionRight {
+	width:250px;
+	height: 235px;
+	float:right;
+}
+
+#sectionRight p {
+	font: 18px Cambria;
+	color:#323231;
+	line-height: 25px;
+	margin-bottom: 20px;
+}
+
+#sectionRight > a {
+	text-decoration: none;
+	font:italic 14px Cambria;
+	color:#5e5e5d;
+	margin-left: 160px;
+}
+
+#sectionRight ul {
+	margin: 40px 0 0 75px;
+}
+
+#sectionRight ul li{
+	display: inline;
+}
+
+#sectionLeft::after, #sectionRight::after {
+	content:'';
+	display: table;
+	clear:both;
+}
+
+#sectionMiddle {
+	width:960px;
+	height: 1px;
+	border-bottom: 1px solid #d6d5d5;
+	margin-top: 35px;
+	position: relative;
+	z-index: 1;
+}
+
+#sectionMiddle div {
+	width:110px;
+	height: 20px;
+	background-color:#f8f7f7;
+	position: absolute;
+	top:-8px;
+	left:80px;
+	z-index: 333;
+}
+
+#sectionMiddle div p {
+	font:italic 14px Candara;
+	color:#4e4e4e;
+	text-align: center;
+}
+
+#sectionBottom {
+	margin-top: 35px;
+}
+
+#sectionBottom div {
+	width:25px;
+	height: 60px;
+}
+
+#galleryLeft, #galleryRight, ul {
+	float:left;
+}
+
+#galleryLeft {
+	background: url(../images/left.png) no-repeat 0px 25px;
+	margin-right: 10px;
+}
+
+#galleryRight {
+	background: url(../images/right.png) no-repeat 7px 25px;
+}
+
+#sectionBottom ul li {
+	width: 84px;
+	height: 84px;
+	background: url(../images/galleryBg.png) no-repeat;
+	margin:0px 14px 0 0;
+	border:1px solid #e6e5e5;
+	float:left;
+}
+
+/*End Content*/
+
+
+/*Begin Footer*/
+
+footer{
+	height: 355px;
+	background-color: #4e4e4e;
+}
+
+
+#footer {
+	width:960px;
+	height: 315px;
+	margin: 0 auto;
+	padding-top: 40px;
+}
+
+#footer h1 {
+	font:36px Candara;
+	color:#f8f7f7;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+#footerFirst, ul {
+	float:left;
+}
+
+#footerFirst {
+	width:380px;
+	margin-right: 30px;
+}
+
+#footerFirst p {
+	font:italic 13px Candara;
+	color:#f8f7f7;
+	line-height: 25px;
+}
+
+#footerTop::after {
+	content:'';
+	display:table;
+	clear:both;
+}
+
+#footer a {
+	text-decoration: none;
+}
+
+#footer ul {
+    margin-left:70px;
+    margin-bottom: 35px;
+}
+
+#footer ul li a{
+	font:italic 13px Candara;
+	color:#f8f7f7;
+	padding-left: 20px;
+	background: url('../images/footerLi.png') no-repeat 5px 5px;
+}
+
+#footer ul li{
+	margin-bottom:12px;
+}
+
+#footer ul li a:hover {
+	color:#242424;
+	background: url('../images/footerLiHover.png') no-repeat 5px 5px;
+}
+
+#footer ul::after {
+	content:'';
+	height: 1px;
+	width: 150px;
+	display: block;
+	border-bottom:1px dashed #323131;
+	margin-top: 35px;
+}
+
+#footerFirst::after {
+	content:'';
+	height: 1px;
+	width: 150px;
+	display: block;
+	border-bottom:1px dashed #323131;
+	margin-top: 15px;
+}
+
+
+#footerLast {
+	margin-top:30px;
+	height: 45px;
+	background-color: #323131;
+}
+
+#footerLast a, #footerLast p {
+	font:13px Candara;
+	color:#c4c4c4;
+}
+
+#footerLast p{
+	margin-left:20px;
+	line-height: 40px;
+}
+
+#footerLast a:hover {
+	color:#242424;
+}
+
+
+/*End Footer*/
