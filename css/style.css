@@ -141,7 +141,7 @@ nav li a {
 	padding-bottom: 25px;
 }
 
-#contentTop section {
+#contentTop > div {
      width:960px;
      margin:0 auto;
 }
@@ -231,26 +231,26 @@ nav li a {
 	margin:15px 0 0 105px;
 }
 
-article {
+.section {
 	width: 250px;
 	float:left;
 	margin: 50px 0 0 30px;
 }
 
-article h3 {
+.section h3 {
     font:bold 13px Candara;
     color: #141313;
     margin-bottom: 10px;
 }
 
-article p {
+.section p {
 	font:13px Candara;
 	color:#232323;
 	line-height: 30px;
 	margin-bottom: 30px;
 }
 
-article a {
+.section a {
 	text-decoration: none;
 	font:13px Candara;
 	color: #595858;
